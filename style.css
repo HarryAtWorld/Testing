@@ -1,0 +1,133 @@
+body{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+
+
+.number{
+   
+    background-color: rgb(255, 255, 255);
+    height:fit-content;
+    width: 100%;
+    align-content:center;    
+} 
+
+.numberArea{
+    padding: 5px;   
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    height: 270px;
+    width: 270px;    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.numberArea div{    
+    margin: 5px;    
+    width: 80px;
+    height: 80px;
+    background-color: #DAE8FC;
+    border: solid 1px #6C8EBF;
+    padding-top: 25px;
+    box-sizing:border-box;
+    text-align: center;
+    align-items:center;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size:30px ;     
+}
+
+
+
+
+.game{
+    background-color: rgb(27, 188, 171);
+    height:fit-content;
+    width: 100%;
+    align-content:center;    
+}
+
+.gameArea{
+    margin: auto;
+    background-color: rgb(21, 160, 145);
+    height: 260px;
+    width: 260px;  
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.gameArea div{
+    margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(27, 188, 171);   
+    box-sizing:border-box;    
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size:30px ;        
+}
+
+.gameimage{
+    height: 150%;
+    max-height: 80px;    
+    
+}
+
+div.separate{
+    height: 2px;
+    background-color: rgb(116, 116, 116);
+
+}
+
+
+.d1{
+    justify-content: space-between;
+    display: flex;
+}
+
+.d1 div{ 
+    width: fit-content;
+    font-weight: 600; 
+    margin: 5px;   
+}
+
+.d2 {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    
+    
+}
+
+.d2 div{
+    border: solid 1px rgb(27, 188, 171);
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    padding: 15px 0px 0px 15px;
+    background-color: white;
+    font-weight: 600;    
+    
+}
+#heightlight{
+    box-shadow: 0px 3px 3px rgb(27, 188, 171);
+
+}
+
+.d3{
+    font-weight: 600;       
+    width: fit-content;
+    margin: auto;
+    height: 30px;
+    padding-top: 30px;
+    
+}
+
+.d4{
+    margin: 30px;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(27, 188, 171);
+}
+
