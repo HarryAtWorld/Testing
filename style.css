@@ -32,12 +32,19 @@ body{
     border: solid 1px #6C8EBF;
     padding-top: 25px;
     box-sizing:border-box;
-    text-align: center;
-    align-items:center;
+    text-align: center;    
     font-family: Arial, Helvetica, sans-serif ;
-    font-size:30px ;     
+    font-size:30px ;   
+    transition: 2s;  
 }
 
+.numberArea div:hover {
+    background-color: #0e0;
+    height: 160px;
+    
+    padding-top: 10px;
+    transition: 2s;
+}
 
 
 
@@ -69,7 +76,7 @@ body{
 }
 
 .gameimage{
-    height: 150%;
+    height: 100%;
     max-height: 80px;    
     
 }
@@ -131,3 +138,10 @@ div.separate{
     color: rgb(27, 188, 171);
 }
 
+[content=o]{
+    background-color: rgb(216, 83, 83);
+}
+
+[content=x]{
+    background-color: rgb(81, 125, 206);
+}

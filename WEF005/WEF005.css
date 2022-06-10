@@ -1,0 +1,182 @@
+body {
+    background-color: rgb(255, 204, 0);
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    max-width: 1210px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+.top img{
+    height: 100%;
+    color: white;
+}
+
+nav {
+    display: flex;
+    background-color: white;    
+    margin: auto;
+    max-width: 1210px;
+}
+
+.manualbar li {
+    
+    width: fit-content;
+    margin: 10px;
+}
+
+
+.nav-item:hover{
+    background-color: rgb(39, 39, 39);
+    color: rgb(180, 81, 81);
+    transition: 1s;
+    
+
+}
+.container-fluid div{
+    text-align: center;
+    background-color: white;
+    border: solid 1px;
+    
+}
+
+.titleText{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.informationBlocks1{
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 20px;
+}
+
+.informationBlocks1 .items{    
+    background-color: white;    
+    margin: 0px;
+    width: 23% ;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+
+}
+
+
+.informationBlocks1 img {
+    width:100%;
+    display: block;
+    
+}
+
+.smallText{
+    font-weight: 100;
+    color: rgb(100, 100, 100);
+    
+}
+
+button {
+    background-color: rgb(255, 204, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border: solid 5px rgb(255, 204, 0);
+    
+}
+
+a{
+    color: black;    
+}
+
+h4 {
+    font-weight: 700;
+    
+}
+
+.titleText{
+    font-style:initial;
+}
+
+.informationBlocks2{
+    display: flex;
+    justify-content: space-between; 
+    /* border: solid 1px black; */
+    
+}
+
+.informationBlocks2 img {
+    width:100%;
+    display: block;
+    
+}
+
+.content{
+    padding: 15px;
+    
+    
+}
+
+.content .smallText{
+    margin-top: 30px ;
+   
+}
+
+.items1{
+    width: 23% ;
+    /* border: solid 1px rgb(228, 22, 7); */
+    margin: 0px;
+    
+    
+    
+}
+
+.items1 .innerItem{
+    background-color: white;    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+   
+    
+}
+
+.items2 {
+    width: 48.6667%;
+    /* border: solid 1px rgb(228, 22, 7); */
+    
+    
+}
+
+.items2 .innerItem{
+    background-color: rgb(255, 255, 255);
+       
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.items3{
+    width: 23% ;
+    /* border: solid 1px rgb(228, 22, 7); */
+    margin: 0px;
+    
+    
+    
+}
+
+.items3 .innerItem{
+    background-color: white;    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+   
+    
+}

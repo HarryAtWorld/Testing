@@ -49,6 +49,156 @@
 // console.log(typeof(e))
 
 
+// list = [10,20,30,40,50,60,70]
+
+// i = 1
+
+// // for ( i ; i <= 6; i++) {
+// //     console.log(i)
+// // }
+
+// // for (let i of list){
+// //     console.log(i)
+// // }
+
+// console.log(i)
+
+// function a(){
+//     let number = 10
+
+//     function insideA(x){
+//          number = number + x
+
+//         return number
+
+//     }
+
+//     function checkCurrent(){
+//         return number
+//     }
+
+//     return { 
+//         number,
+//         insideA,
+//         checkCurrent
+//     }
+// }
+
+// m = a()
+
+// m.insideA(30)
+// m.insideA(30)
+// m.insideA = function h(num) {   // can directly change the inside function, unless 'freeze' used when return. can't directly change the value here
+//         return 5000 +num
+//   }
+
+// console.log(m.number, m.insideA(30), m.checkCurrent())
+
+// function createListNode(value) {
+//     return {
+//         value,
+//         next: null,
+//     };
+// }
+
+// function createSinglyLinkedList() {
+
+//     let head = null;
+
+//     return Object.freeze({
+//         addNewNode: (value) => {
+//             const newNode = createListNode(value);
+//             if (head === null) {
+//                 head = newNode;
+//                 return;
+//             }
+
+//             let current = head;
+//             while (current.next !== null) {
+//                 current = current.next;
+//             }
+
+//             // current now is the last node of the list !!
+//             current.next = newNode;
+//         },
+//         displayAllNodeValues: () => {
+//             if (head === null) {
+//                 console.log("the list is empty!!!");
+//                 return;
+//             }
+
+//             let current = head;
+//             do {
+//                 console.log(current.value);
+//                 current = current.next;
+//             } while (current !== null);
+//         },
+//         displayMiddleNodeValue: () => {
+            
+
+//             let listLength = 1
+
+//             if (head === null) {
+//                 listLength = 0
+
+//                 return;
+//             }
 
 
-console.log( "A">="J")
+//             let current = head;
+//             do {
+//                 listLength++;
+//                 current = current.next;
+//             } while (current.next !== null)
+
+//             console.log('list length: ' + listLength)
+
+//             let midIndex = Math.ceil(listLength/2)
+//             console.log('list Mid Index: ' + midIndex)
+
+//             let midValue;
+//             for (let i = 0; i<= midIndex; i++){
+//                 midValue = head.next
+//             }
+
+//             console.log('list Mid Value: ' + midValue.value)
+
+
+
+
+
+
+//         },
+//     });
+// }
+
+// list = createSinglyLinkedList()
+
+// list.addNewNode(2)
+// list.addNewNode(3)
+// list.addNewNode(5)
+// list.addNewNode(6)
+// list.addNewNode(10)
+
+// list.displayAllNodeValues()
+// list.displayMiddleNodeValue()
+
+
+// console.log(Math.round(16/10)*10 )
+
+// a = 1
+// b = 2
+// c = 3
+// d = 4
+
+// for (let i = 0; i<6; i++){
+
+//     listA = [d, a, b, c] = [a, b, c, d]
+
+//     console.log(listA)
+
+// }
+ 
+
+console.log(0%10)
+
