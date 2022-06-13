@@ -186,19 +186,60 @@
 
 // console.log(Math.round(16/10)*10 )
 
-// a = 1
-// b = 2
-// c = 3
-// d = 4
+a = 1
+b = 2
+c = 3
+d = 4
+e = 5
+f = 6
 
-// for (let i = 0; i<6; i++){
+for (let i = 0; i<6; i++){
 
-//     listA = [d, a, b, c] = [a, b, c, d]
+    listA = [a, b, c, d, e, f] = [b,a,d,c,f,e]
 
-//     console.log(listA)
+    console.log(listA)
 
+}
+ //=========================================================================================
+
+
+// list = [[8,8]]
+
+// function add(x,y) {
+//     if (list.some((i) => i.join() === [x,y].join())){
+//         // console.log('X')
+//     }else{
+//         list.push([x, y]);
+//         //  console.log(list.some((i) => i.join() === [x,y].join()))
+//         //  console.log( [x,y].join())
+//     }
+    
 // }
- 
 
-console.log(0%10)
+// function addSurround(x,y) {    
+//     add(x,y);
+//     add(x,y - 1);
+//     add(x,y + 1);
+//     add(x - 1,y);
+//     add(x - 1,y - 1);
+//     add(x - 1,y + 1);
+//     add(x + 1,y);
+//     add(x + 1,y - 1);
+//     add(x + 1,y + 1);
+// }
 
+// function remove(x, y) {
+//     list = list.filter((i) => i.join() !== [x, y].join())
+// }
+
+// addSurround(1,3);
+// addSurround(1,3);
+// addSurround(1,4);
+
+
+
+// console.log(list , ' List Length: ', list.length)
+// remove(1, 4);
+// console.log(list , ' removed List Length: ', list.length)
+
+//==============================

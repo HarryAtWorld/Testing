@@ -8,10 +8,25 @@
     <link rel="stylesheet" href="index.css">
     
 </head>
-<body>
+<!-- style="background-color:rgb(255,255,255);" -->
+<body >
+    <div id = 'gameName'>Game of Life </div>
     <div id = 'gameStatus'></div>
     <div id='canvas'></div>
-    <div class="buttonArea"><button id="start">Start</button><button id="pause">Pause</button><button id="reset">Reset</button></div> 
+
+<div class="sliderArea">
+    <div>Display Speed : Slow</div>
+    <div class="slidecontainer">
+        <input type="range" min="15" max="60" value="50" class="slider" id="myRange">
+    </div>
+    <div>Fast</div>
+
+</div>
+
+    
+
+    <div class="buttonArea"><button id="start">Start (Enter)</button><button id="pause">Pause (Space Bar)</button><button id="reset">Reset (Esc)</button><button id="whiteBackground">white Background</button><button id="blackBackground">Black Background</button></div> 
+    
 
 
 
