@@ -1,37 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harry WEF008 Project</title>
+    <title>Harry's Landing Page</title>
     <link rel="stylesheet" href="index.css">
-    
 </head>
-<!-- style="background-color:rgb(255,255,255);" -->
-<body >
-    <div id = 'gameName'>Game of Life </div>
-    <div id = 'gameStatus'></div>
-    <div id='canvas'></div>
 
-<div class="sliderArea">
-    <div>Display Speed : Slow</div>
-    <div class="slidecontainer">
-        <input type="range" min="15" max="60" value="50" class="slider" id="myRange">
+<body>
+
+    <div class="container">
+        <div class="selfInformation">
+            <div>
+            <div>
+                <img id="photo" src="HarryPhoto.jpg">
+            </div>
+            <div id="name">Harry Tai</div>
+            <div class=" lanArea">
+                <div id="Lan">Language:</div>
+                <div class="lan2">- Cantonese</div>
+                <div class="lan2">- English </div>
+                <div class="lan2">- Mandarin</div>
+            </div></div>
+
+
+        </div>
+
+
+        <div class="otherInformation">
+            <div>
+                <h2>Work experience </h2>
+            </div>
+            <div class="intro1">Architectural Assistant with 5 years’ experience at architecture firm. Mainly in
+                charge
+                on GBP submission, tender preparation and coordination works between client, consultants and
+                contractors. Experienced on institutional projects, like university and school.
+            </div>
+
+            <div>
+                <h2>Education </h2>
+            </div>
+            <div>
+                <spen>B.A. (Hons) Architecture <br>
+                    University of Lincoln<br>
+                    Graduated 2015
+
+            </div>
+
+            <div>
+                <h2>Technical Skill </h2>
+            </div>
+            <div>
+                <ul>
+                    <li>CAD</li>
+                    <li>SketchUp</li>
+                    <li>Rhino 3D</li>
+                    <li>Python</li>
+                    <li>Microsoft Office</li>
+
+                </ul>
+
+            </div>
+            
+
+
+        </div>
+
     </div>
-    <div>Fast</div>
-
-</div>
-
-    
-
-    <div class="buttonArea"><button id="start">Start (Enter)</button><button id="pause">Pause (Space Bar)</button><button id="reset">Reset (Esc)</button><button id="whiteBackground">white Background</button><button id="blackBackground">Black Background</button></div> 
-    
+    <div class="gogame"><a href="Game.html"><button>Play the Game of Life</button></a></div>
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
-    
-    <script src="index.js"></script>
 </body>
+
 </html>
