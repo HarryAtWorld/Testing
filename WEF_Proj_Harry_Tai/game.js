@@ -38,8 +38,6 @@ function windowResized() {
 
 
 let startButton = document.querySelector('#start');
-
-
 startButton.addEventListener("click", () => {
     isGameStart = true;
 })
@@ -136,18 +134,20 @@ function draw() {
 //=========================================================================================================================================================
 
 
-function keyReleased() {
-    if (keyCode === 32) {
+function keyPressed() {
+    if (keyCode === 32) { //space bar to pause
         isGameStart = false;
-    } else if (keyCode === 13) {
+    } else if (keyCode === 13) { // enter to star
         isGameStart = true;
-    } else if (keyCode === 27) {
+    } else if (keyCode === 27) { //esc to reset
         isGameStart = false;
         initGame();
         updateUI();
     }
 }
 
+//keyRelease Bug: after mouse reset, space bar become reset .why???
+//keyPressed Bug: 
 
 
 //
@@ -284,10 +284,10 @@ function mousePressed() {
     mouseDragged();
 }
 
-function mouseReleased() {
-    // isGameStart = true;
-    // loop();
-}
+// function mouseReleased() {
+//     // isGameStart = true;
+//     // loop();
+// }
 
 function mouseDragged() {
     /**
