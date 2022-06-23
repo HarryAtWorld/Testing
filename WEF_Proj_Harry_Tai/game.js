@@ -147,7 +147,7 @@ function keyPressed() {
 }
 
 //keyRelease Bug: after mouse reset, space bar become reset .why???
-//keyPressed Bug: 
+//keyPressed Bug: space bar can stop
 
 
 //

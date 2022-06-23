@@ -1,0 +1,9 @@
+File (ex1.ts) : Content is undefined 
+File (output.txt) : Content is undefined 
+File (ex1.ts) : Content is undefined 
+File (ex1.ts) : Content is const directory:string = 'C:/Users/Harry Tai/tecky-exercises/Testing/WSP/WSP003' 
+File (output.txt) : Content is undefined 
+File (output.txt) : Content is File (output.txt) : Content is undefined  
+File (ex1.ts) : Content is const directory:string = 'C:/Users/Harry Tai/tecky-exercises/Testing/WSP/WSP003' 
+File (output.txt) : Content is File (ex1.ts) : Content is const directory:string = 'C:/Users/Harry Tai/tecky-exercises/Testing/WSP/WSP003'  
+File (ex1.ts) : Content is  
