@@ -70,7 +70,7 @@ app.get('/', (req, res) => {
 })
 
 
-
+// set the port number
 const port = 8080;
 
 app.listen(port, () => {
