@@ -17,12 +17,14 @@ const app = express();
 
 // make cookies ?
 app.use(
+   
     expressSession({
         secret: "Harry",
         resave: true,
         saveUninitialized: true,
-        name:"Harry's Cookie"
+        name:"Harry Website's Cookie"
     })
+
 )
 
 
@@ -47,19 +49,21 @@ app.get('/', (req, res) => {
 
         // res.sendFile(path.join(__dirname, 'index.html'))
         res.send(`唔係第一次來 ${req.ip} \n visit count: ${req.session[`visitCount`]}`)
-        console.log("print session:",req.session)
+        console.log("print session:",req.session, "sessionID:",req.sessionID)
+
+        
         
         
         
         
     } else{
-        console.log("print session:",req.session)
+        
+        console.log("print session:",req.session, "sessionID:",req.sessionID)
         req.session[`name`] = req.ip;
         req.session[`visitCount`] = 0;
         res.send(`You are 1st time to this website ${req.ip} visit count: ${req.session[`visitCount`]}`)
         
-    }
-   
+    }   
 
     
 
