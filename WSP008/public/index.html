@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Form</title>
+</head>
+
+<body>
+
+    <form id="form1">
+    <!-- <form action="http://192.168.1.126:8080/submit" method="GET" id="contact-form" > -->
+        <div>
+            <label>
+                First Name:
+                <input type="text" name="firstName" value="Harry" required />
+            </label>
+        </div>
+        <div>
+            <label>
+                Last Name:
+                <input type="text" name="lastName" value="Tai" required />
+            </label>
+        </div>
+        <div>
+            <label>
+                Profile Picture:
+                <input type="file" name="profile" />
+            </label>
+        </div>
+        <div>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Clear" />
+        </div>
+    </form>
+
+    <div id="contact-result"></div>
+
+
+    <script src= 'index.js'></script>
+</body>
+
+</html>

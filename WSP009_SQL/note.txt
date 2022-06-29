@@ -1,0 +1,4 @@
+psql -U harry -W harry_data   <===='harry' is user, '-w' means login with password, 'harry_data' is the database.
+
+user: harry , pw: abcd
+user: postgres , pw: 1234
