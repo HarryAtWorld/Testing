@@ -186,21 +186,21 @@
 
 // console.log(Math.round(16/10)*10 )
 
-a = 1
-b = 2
-c = 3
-d = 4
-e = 5
-f = 6
+// a = 1
+// b = 2
+// c = 3
+// d = 4
+// e = 5
+// f = 6
 
-for (let i = 0; i<6; i++){
+// for (let i = 0; i<6; i++){
 
-    listA = [a, b, c, d, e, f] = [b,a,d,c,f,e]
+//     listA = [a, b, c, d, e, f] = [b,a,d,c,f,e]
 
-    console.log(listA)
+//     console.log(listA)
 
-}
- //=========================================================================================
+// }
+//  //=========================================================================================
 
 
 // list = [[8,8]]
@@ -243,3 +243,29 @@ for (let i = 0; i<6; i++){
 // console.log(list , ' removed List Length: ', list.length)
 
 //==============================
+
+let list = [3,4]
+
+let obj ={}
+obj['-2,4'] = {x:-2,y:4}
+obj['7,-6'] ={x:7,y:-6}
+obj['5,1'] ={x:5,y:1}
+obj['-3,-1'] ={x:-3,y:-1}
+obj['4,2'] ={x:4,y:2}
+obj['5,5'] ={x:5,y:5}
+
+let keys = Object.keys(obj)
+
+console.log(keys)
+
+keys.sort((a,b)=>{
+    if (obj[a]['y']<obj[b]['y']){
+        return -1
+    } else if (obj[a]['y']>obj[b]['y']){
+        return 1
+    }else{
+        return 0;
+    }
+})
+
+console.log(keys)
