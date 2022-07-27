@@ -1,0 +1,3 @@
+create table users( id serial primary key,username varchar(255) unique,password varchar(255),level varchar(255));
+create table category( id serial primary key,name varchar(255) unique);
+create table files( id serial primary key,name varchar(255), content text,is_file boolean,category_id integer,foreign key (category_id) references category(id), owner_id integer, foreign key (owner_id) references users(id));

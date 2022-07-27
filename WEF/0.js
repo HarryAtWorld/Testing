@@ -134,7 +134,7 @@
 //             } while (current !== null);
 //         },
 //         displayMiddleNodeValue: () => {
-            
+
 
 //             let listLength = 1
 
@@ -186,21 +186,21 @@
 
 // console.log(Math.round(16/10)*10 )
 
-a = 1
-b = 2
-c = 3
-d = 4
-e = 5
-f = 6
+// a = 1
+// b = 2
+// c = 3
+// d = 4
+// e = 5
+// f = 6
 
-for (let i = 0; i<6; i++){
+// for (let i = 0; i<6; i++){
 
-    listA = [a, b, c, d, e, f] = [b,a,d,c,f,e]
+//     listA = [a, b, c, d, e, f] = [b,a,d,c,f,e]
 
-    console.log(listA)
+//     console.log(listA)
 
-}
- //=========================================================================================
+// }
+//=========================================================================================
 
 
 // list = [[8,8]]
@@ -213,7 +213,7 @@ for (let i = 0; i<6; i++){
 //         //  console.log(list.some((i) => i.join() === [x,y].join()))
 //         //  console.log( [x,y].join())
 //     }
-    
+
 // }
 
 // function addSurround(x,y) {    
@@ -243,3 +243,263 @@ for (let i = 0; i<6; i++){
 // console.log(list , ' removed List Length: ', list.length)
 
 //==============================
+
+
+
+// let i = 1
+// while (i < 5) {
+
+//     async function p() {
+//         let promise = new Promise((resolve, reject) => {
+//             setTimeout(() => resolve(`${i} done!`), 1000)
+//         });
+
+//         console.log(await promise)
+//     }
+//     p()
+
+
+//     i++
+// }
+
+// for(let i =1 ; i<5; i++){
+//     async function p() {
+//         let promise = new Promise((resolve, reject) => {
+//             setTimeout(() => resolve(`${i} done!`), 1000)
+//         });
+
+//         console.log(await promise)
+//     }
+//     p()
+// }
+
+// let i = 0
+
+// async function re() {
+
+//     let promise = new Promise((resolve, reject) => {
+//         setTimeout(() => resolve(`${i} done!`), 1000)
+//     });
+//     console.log(await promise)
+
+
+//     if (i < 5) {
+//         re()
+//     }
+//     i++
+// }
+
+// re()
+
+// console.log('last line')
+
+//=========================================================================================
+
+// function f1() {
+//     console.log('this is Function 1')
+// }
+
+// function f2() {
+//     console.log('this is Function 2')
+// }
+
+// function f5() {
+//     console.log('this is Function 5')
+// }
+
+// function f4() {
+//     console.log('this is Function 4')
+// }
+
+// async function syncf3() {
+//     console.log('this is syncf3 1st print')
+
+//     let promise = new Promise((resolve, reject) => {
+//         setTimeout(() => resolve("done!"), 1000)
+//     });
+
+//     // let result = await promise; // 等待，直到 promise resolve (*)
+
+//     // console.log('this is syncf3 2st print , with result:', result)
+//     console.log('this is syncf3 2st print , with result:', await promise)
+
+//     console.log('this is syncf3 3rd print')
+
+
+// }
+
+
+// f1()
+// f2();
+// syncf3();
+// f4();
+// f5();
+
+
+// let i = 0
+
+// async function po() {
+
+//     return promise = new Promise((resolve, reject) => {
+//         setTimeout(() => resolve(false), 1000)
+//     });
+// }
+
+
+
+
+// async function print() {
+//     let p = po()
+
+//     console.log( await p)
+
+//     if( await p){
+//         console.log('ok')
+//     }
+
+//     i++
+
+//     if(i<5){
+//         print()
+//     }
+// }
+
+
+
+// print()
+
+// console.log('last line')
+
+
+var value = 1;
+
+var foo = {
+    value: 5,
+    bar: function () {
+        return this.value;
+    }
+}
+
+// //範例1
+// console.log(foo.bar());
+// //範例2
+// console.log((foo.bar)());
+// //範例3
+// console.log((foo.bar = foo.bar)());
+// //範例4
+// console.log((false || foo.bar)());
+// //範例5
+// console.log((foo.bar, foo.bar)());
+
+
+
+// function fo(inputFunction){
+//     let value= 5
+
+//     return inputFunction()
+
+// }
+
+// function ba(){
+//     return this.value
+// }
+
+// let ba2 = ()=>{
+//     return this.value
+// }
+
+
+// // console.log(fo(ba2))
+
+
+// function hello(){
+//     console.log(this)
+//   }
+
+//   hello()
+
+
+//==================================================================================================================
+
+
+let a = 'global a'
+
+// function f1() {
+//     let a = 1
+
+
+
+//     f2()
+// }
+
+// let f22 = ()=>{ console.log(this.a)}
+
+
+
+
+
+let f11 = {
+    a: 11,
+    f22: printObjectInside
+}
+
+let f1111 = {
+    a: 1111,
+    f22: printObjectInside
+
+}
+
+
+function printObjectInside() {
+    console.log('this is print inside Function:', this.a)
+}
+
+let f111 = {
+    a: 111,
+    f22: function () {
+        let k = () => {
+            console.log('f11144444.22', this.a)
+        }
+        k()
+    }
+}
+
+
+let f33 = {
+    a: 33,
+    f22: f11.f22
+
+}
+
+function f4() {
+    let a = "f4's a"
+    f11.f22()
+
+
+}
+
+
+f11.f22()
+f1111.f22()
+f111.f22()
+f33.f22()
+f4()
+console.log('break--------------------------------------------------------------------------')
+
+const obj = {
+    x: 1,
+    hello: function () {
+        // 這邊印出來的 this 是什麼，test 的 this 就是什麼
+        // 就是我說的：
+        // 在宣告它的地方的 this 是什麼，test 的 this 就是什麼
+        console.log('111111', this.x)
+        const test = () => {
+            console.log('22222222222222', this.x)
+        }
+        test()
+    }
+}
+
+obj.hello() // 1
+//   const hello = obj.hello
+//   hello() // undefined
