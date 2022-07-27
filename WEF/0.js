@@ -200,7 +200,7 @@
 //     console.log(listA)
 
 // }
-//=========================================================================================
+//  //=========================================================================================
 
 
 // list = [[8,8]]
@@ -503,3 +503,28 @@ const obj = {
 obj.hello() // 1
 //   const hello = obj.hello
 //   hello() // undefined
+let list = [3,4]
+
+let obj ={}
+obj['-2,4'] = {x:-2,y:4}
+obj['7,-6'] ={x:7,y:-6}
+obj['5,1'] ={x:5,y:1}
+obj['-3,-1'] ={x:-3,y:-1}
+obj['4,2'] ={x:4,y:2}
+obj['5,5'] ={x:5,y:5}
+
+let keys = Object.keys(obj)
+
+console.log(keys)
+
+keys.sort((a,b)=>{
+    if (obj[a]['y']<obj[b]['y']){
+        return -1
+    } else if (obj[a]['y']>obj[b]['y']){
+        return 1
+    }else{
+        return 0;
+    }
+})
+
+console.log(keys)
